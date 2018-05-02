@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:visibility="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="datatable">
+        <div :style="{visibility: buttonVisibility}">
+            <button @click="fullTypeList = false, loadQuote(), buttonVisibility = 'hidden', tableVisibility='visible'">Маленький список пользователей</button>
+            <button @click="fullTypeList = true, loadQuote(), buttonVisibility = 'hidden', tableVisibility='visible'" >Большой список пользователей</button>
+        </div>
+        <div :style="{visibility:tableVisibility}">
+            <div id="status">{{status}}</div>
+            </br>
+            <input type="text" id = "search" v-model = "search" />
+            <button id = "searchbutton" @click="searchButton()">Поиск</button>
+            <table>
+                <tr>
+                    <td><a @click="sortParam='id'; firstClick = !firstClick; showArrow() ">id {{arrows[0]}}</a></td>
+                    <td><a @click="sortParam='firstname'; firstClick = !firstClick; showArrow()">firstname {{arrows[1]}}</a></td>
+                    <td><a @click="sortParam='lastname'; firstClick = !firstClick; showArrow()">lastname {{arrows[2]}}</a></td>
+                    <td><a @click="sortParam='email'; firstClick = !firstClick; showArrow()">email {{arrows[3]}}</a></td>
+                    <td><a @click="sortParam='phone'; firstClick = !firstClick; showArrow()">phone {{arrows[4]}}</a></td>
+                </tr>
+                <tr v-for="(user) in sortedUsers" @click="selectUser(user.id);">
+                    <td>{{user.id}}</td>
+                    <td>{{user.firstname}}</td>
+                    <td>{{user.lastname}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.phone}}</td>
+                </tr>
+            </table>
+            <div id="userdata">
+                Выбран пользователь <b>{{user.firstname}} {{user.lastname}}</b></br>
+                Описание:</br>
+                <textarea>
+                    {{user.description}}
+                </textarea></br>
+                Адрес проживания: <b>{{user.address}}</b></br>
+                Город: <b>{{user.city}}</b></br>
+                Провинция/штат: <b>{{user.state}}</b></br>
+                Индекс: <b>{{user.index}}</b>
+            </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
