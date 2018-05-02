@@ -1,0 +1,78 @@
+{
+  "LongUsersList": [
+      {
+         "id": 101,
+         "firstname": "Sue",
+         "lastname": "Morson",
+         "email": "DWhalley@in.gov",
+         "phone": "(612)211-6296",
+         "description": "Sue Corson",
+         "address": "9792 Mattis Ct",
+         "city": "Waukesha",
+         "state": "WI",
+         "index": 22178
+      },
+      {
+         "id": 102,
+         "firstname": "Lor",
+         "lastname": "Ipsumd",
+         "email": "dwhalley@in.gov",
+         "phone": "(612)211-6296",
+         "description": "Lor Ipsumd",
+         "address": "1234 EST ",
+         "city": "New Your",
+         "state": "WI",
+         "index": 12418
+      },
+      {
+         "id": 103,
+         "firstname": "Ips",
+         "lastname": "Umdolo",
+         "email": "dwhalley@in.gov",
+         "phone": "(612)211-6296",
+         "description": "Ips Umdolo",
+         "address": "5678 Marph",
+         "city": "Washington",
+         "state": "WI",
+         "index": 32458
+      },
+      {
+         "id": 104,
+         "firstname": "Vladimir",
+         "lastname": "Chemerilov",
+         "email": "snales11@mail.ru",
+         "phone": "89234109387",
+         "description": "graduate student",
+         "address": "Ysova 15b",
+         "city": "Tomsk",
+         "state": "TomskArea",
+         "index": 634583
+      }
+   ],
+  "ShortUsersList": [
+      {
+         "id": 101,
+         "firstname": "Sue",
+         "lastname": "Corson",
+         "email": "DWhalley@in.gov",
+         "phone": "(612)211-6296",
+         "description": "Sue Corson",
+         "address": "9792 Mattis Ct",
+         "city": "Waukesha",
+         "state": "WI",
+         "index": 22178
+      },
+      {
+         "id": 102,
+         "firstname": "Lor",
+         "lastname": "Ipsumd",
+         "email": "dwhalley@in.gov",
+         "phone": "(612)211-6296",
+         "description": "Lor Ipsumd",
+         "address": "1234 EST ",
+         "city": "New Your",
+         "state": "WI",
+         "index": 12418
+      }
+  ]
+}
